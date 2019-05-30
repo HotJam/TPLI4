@@ -1,0 +1,51 @@
+﻿@model Assistente.Models.Receita
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Receita</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Prodecimento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Prodecimento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Avaliacao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Avaliacao)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TempoPreparacao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TempoPreparacao)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nutricao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nutricao)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ReceitaId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

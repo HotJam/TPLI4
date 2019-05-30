@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-Assistente-9744B599-FF61-41C8-8F87-80C3E531685F</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Ingredientes\**" />
+    <Content Remove="Views\Ingredientes\**" />
+    <EmbeddedResource Remove="Views\Ingredientes\**" />
+    <None Remove="Views\Ingredientes\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\IngredientesController.cs" />
+    <Compile Remove="Models\AspNetRoleClaims.cs" />
+    <Compile Remove="Models\AspNetRoles.cs" />
+    <Compile Remove="Models\AspNetUserClaims.cs" />
+    <Compile Remove="Models\AspNetUserLogins.cs" />
+    <Compile Remove="Models\AspNetUserRoles.cs" />
+    <Compile Remove="Models\AspNetUsers.cs" />
+    <Compile Remove="Models\AspNetUserTokens.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Home\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Identity\Data\" />
+    <Folder Include="Areas\Identity\Services\" />
+  </ItemGroup>
+
+</Project>

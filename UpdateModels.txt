@@ -1,0 +1,2 @@
+====UPDATE MODEL====
+Scaffold-DbContext "Server=DESKTOP-TFQ3JM9;Database=AssistentePessoal;User Id=sa;Password=tpli4;Trusted_Connection=True;MultipleActiveResultSets=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Context ApplicationDbContext -Tables FavoritoReceita,Ingrediente,InventarioIngrediente,Receita,ReceitaIngrediente,Utilizador -ContextDir Data -Force
